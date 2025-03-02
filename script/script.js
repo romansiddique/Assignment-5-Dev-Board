@@ -21,6 +21,7 @@ function hourMinuteSecond(today){
 const btnComplete = document.getElementsByClassName('btn-complete');
 for (const button of btnComplete){
   button.addEventListener('click', function(){
+    alert('Board updated successfully');
     // navbar
     const navCompleteTask = parseInt(document.getElementById('nav-complete-task').innerText);
     const decreaseNavCompleteTask = navCompleteTask + 1;
@@ -48,6 +49,9 @@ for (const button of btnComplete){
     button.setAttribute('disabled' , true)
 
   
+  if(taskAssigned-1 == 0 ){
+    alert('congratulation!!! You have completed all the task');
+  }
   
   })
 }
