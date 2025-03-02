@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Today</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<style>
+  .poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  }
+</style>
+<body class="bg-[#F4F7FF]">
+  <section class="p-2 poppins-font max-w-[1200px] mx-auto">
+    <nav class="bg-white flex items-center justify-between p-4 my-4 rounded-2xl">
+      <div class="flex items-center gap-2">
+        <img class="w-10" src="assets/logo.png" alt="">
+        <h1 class=" text-xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <button id="btn-discover" class="bg-blue-700 text-white py-2 px-3 font-semibold rounded-lg cursor-pointer ">Back to Desk</button>
+    </nav>
+  
+    <main>
+      <h1 class="text-4xl font-bold text-center mb-5">Blogs</h1>
+      <div class="q1 bg-white p-4 mb-7 rounded-lg">
+        <div class="border-b-2 border-dotted">
+          <h1 class="text-xl font-bold">what are the different ways to select an element in the dom</h1>
+        </div>
+        <div class="answer mt-5">
+          <h2 class="text-base font-semibold">There are 4 difference way to select an element using DOM:</h2>
+          <ol class="list-decimal ml-7">
+            <li>document.getElementById(' ')</li>
+            <li>document.getElementsByClassName(' ')</li>
+            <li>document.querySelector(' ')</li>
+            <li>document.querySelectorAll(' ')</li>
+          </ol>
+        </div>
+      </div>
+  
+      <div class="q2 bg-white p-4 mb-7 rounded-lg">
+        <div class="border-b-2 border-dotted">
+          <h1 class="text-xl font-bold">what the difference among innerHTML, innerText and textContent</h1>
+        </div>
+        <div class="answer mt-5">
+          <h2 class="text-base font-semibold">The difference among innerHTML, innerText and textContent is:</h2>
+          <p>
+            1. innerText return only tag content. <br>
+            2. innerHTML return content including tags. <br>
+            3. textContent return content including hidden text.
+          </p>
+        </div>
+      </div>
+  
+      <div class="q3 bg-white p-4 mb-7 rounded-lg">
+        <div class="border-b-2 border-dotted">
+          <h1 class="text-xl font-bold">what is event delegation in DOM</h1>
+        </div>
+        <div class="answer mt-5">
+          <h2 class="text-base font-semibold">The event delegation in DOM is:</h2>
+          <p>
+            Event delegation is a technique that helps you to control event bubbling. <br>
+            It attach event Listener to a parent element instead of adding multiple child element.
+          </p>
+        </div>
+      </div>
+  
+      <div class="q4 bg-white p-4 mb-7 rounded-lg">
+        <div class="border-b-2 border-dotted">
+          <h1 class="text-xl font-bold">what is event bubbling in DOM</h1>
+        </div>
+        <div class="answer mt-5">
+          <h2 class="text-base font-semibold">The event bubbling in DOM is:</h2>
+          <div class="flex justify-between items-center">
+            <p>
+              When you click an element that have with any event. But it will not stop after rendering this event it will up for showing any events has in the parent. it called event bubbling.
+            </p>
+            <div>
+              <img class="w-[400px]" src="assets/event-bubbling.svg" alt="">
+              <figcaption class="text-center text-base text-gray-500">Event bubbling</figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="q5 bg-white p-4 mb-7 rounded-lg">
+        <div class="border-b-2 border-dotted">
+          <h1 class="text-xl font-bold">How to use create, add, remove element in JS</h1>
+        </div>
+        <div class="answer mt-5">
+          <h2 class="text-base font-semibold">The uses of create, add and remove element is:</h2>
+          <p>
+            1. create use to create an element. <br>
+            example: <br>
+            const createParagraphTag = document.body.createElement('p') <br>
+            It will create a paragraph tag. <br> <br>
+            2. add use to add class in any tag. <br>
+            example: <br>
+            document.getElementById("id").classList.add('class') <br> <br>
+            3. remove use to remove an element directly. <br>
+            example: <br>
+            createParagraphTag.remove() <br>
+            It will remove this paragraph tag.
+          </p>
+        </div>
+      </div>
+    </main>
+  </section>
+  
+  <script src="script/discover.js"></script>
+</body>
+</html>

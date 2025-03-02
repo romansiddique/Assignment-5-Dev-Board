@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+        }
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .task-card {
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .task-card h4 {
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        .task-card h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .task-card p {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .task-card .deadline {
+            font-size: 14px;
+            color: #4b5563;
+        }
+        .completed-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 6px 12px;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+        .right-section {
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .activity-log h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .clear-btn {
+            background-color: #dc2626;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .activity-log p {
+            font-size: 14px;
+            color: #6b7280;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dashboard Container -->
+    <div class="container">
+
+        <!-- Left Section -->
+        <div class="left-section">
+
+            <!-- Header -->
+            <div class="header">
+                <div class="text-lg font-semibold">Task Assigned: <span style="color: #2563eb;">05</span></div>
+                <div style="background-color: #2563eb; color: white; padding: 8px 12px; border-radius: 4px;">Discover Something New Today!</div>
+                <div style="color: #6b7280;">Wed, Jul 28 2025</div>
+            </div>
+
+            <!-- Tasks Section -->
+            <div class="task-grid">
+
+                <!-- First Row (Three Cards) -->
+                <div class="task-card">
+                    <h4>ShopEase</h4>
+                    <h3>Fix Mobile Button Issue</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping ...</p>
+                    <div class="deadline">Deadline: 21 March 2025</div>
+                    <button class="completed-btn">Completed</button>
+                </div>
+
+                <div class="task-card">
+                    <h4>CloudSync</h4>
+                    <h3>Add Dark Mode</h3>
+                    <p>Store the user's preference in localStorage, update CSS ...</p>
+                    <div class="deadline">Deadline: 21 March 2025</div>
+                    <button class="completed-btn">Completed</button>
+                </div>
+
+                <div class="task-card">
+                    <h4>SwiftPay</h4>
+                    <h3>Optimize Home Page</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping ...</p>
+                    <div class="deadline">Deadline: 21 March 2025</div>
+                    <button class="completed-btn">Completed</button>
+                </div>
+
+                <!-- Second Row (Three Cards) -->
+                <div class="task-card">
+                    <h4>Meta</h4>
+                    <h3>Add new emoji 👐</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping ...</p>
+                    <div class="deadline">Deadline: 21 March 2025</div>
+                    <button class="completed-btn">Completed</button>
+                </div>
+
+                <div class="task-card">
+                    <h4>Google LLC</h4>
+                    <h3>Integrate OpenAI API</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping ...</p>
+                    <div class="deadline">Deadline: 21 March 2025</div>
+                    <button class="completed-btn">Completed</button>
+                </div>
+
+                <div class="task-card">
+                    <h4>Glassdoor</h4>
+                    <h3>Improve Job Searching</h3>
+                    <p>Debug using Chrome DevTools, check for overlapping ...</p>
+                    <div class="deadline">Deadline: 21 March 2025</div>
+                    <button class="completed-btn">Completed</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Section - Activity Log -->
+        <div class="right-section">
+            <div class="activity-log">
+                <h3>Activity Log</h3>
+                <button class="clear-btn">Clear History</button>
+                <p>You have completed the task "Add Dark Mode" at 12:48:15 PM</p>
+                <p>You have completed the task "Add Dark Mode" at 12:48:15 PM</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
