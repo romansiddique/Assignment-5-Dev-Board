@@ -64,7 +64,7 @@ document.getElementById('main-section-date').innerText = weekDateMonthYear(new D
 // clear activity
 document.getElementById('clear-history').addEventListener('click', function(){
   const activityLogHistory = document.getElementById('activity-log-history');
-  activityLogHistory.style.display = 'none';
+  activityLogHistory.innerHTML= '';
 });
 
 // going to discover page
