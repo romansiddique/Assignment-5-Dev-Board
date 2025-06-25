@@ -6,7 +6,7 @@ Dev Board is a clean and interactive task dashboard for developers. It helps you
 
 ---
 
-## 🖼️ Screenshot
+## 🖼️ DEV BOART PREVIEW
 
 ![Dev Board UI Screenshot](preview.jpeg)
 
