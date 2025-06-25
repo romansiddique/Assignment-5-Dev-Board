@@ -6,6 +6,12 @@ Dev Board is a clean and interactive task dashboard for developers. It helps you
 
 ---
 
+## 🖼️ Screenshot
+
+![Dev Board UI Screenshot](preview.jpeg)
+
+---
+
 ## 🎯 Overview
 
 This app combines a developer-focused task manager with a DOM learning blog. The UI is built for simplicity and performance — allowing you to complete tasks, log activity, and navigate seamlessly.
